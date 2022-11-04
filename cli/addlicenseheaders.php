@@ -6,7 +6,7 @@ $formats = array(
     "css" => array("start" => "/*", "end" => "*/")
 );
 $licensetext = <<<TEXT
-This file is part of paragrams wiki, find him here: github.com/Paragramex or on replit: replit.com/@paragram.
+This file is part of paragrams OpenWiki system, find him here: github.com/Paragramex or on replit: replit.com/@paragram.
 TEXT
 ?>
 Files to skip:

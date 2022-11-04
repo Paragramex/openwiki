@@ -1,4 +1,4 @@
-### Wiki Software
+### OpenWiki Software
 This is a tool I created in PHP to create a wiki without having to set up a bunch of
 PHP extensions and everything. The icons should be the same as the ones on MediaWiki,
 and are [licensed](https://mediawiki.org/wiki/Special:Permalink/4637986) under the GNU General Public License.

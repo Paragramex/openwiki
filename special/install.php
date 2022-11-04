@@ -30,7 +30,7 @@ $options = array(
     "sitename" => array(
         "type" => "text",
         "description" => "Site name:",
-        "default" => "My test wiki"
+        "default" => "OpenWiki Clone"
     ),
     "subheading" => array(
         "type" => "text",
@@ -61,11 +61,11 @@ $options = array(
     ),
     "code" => array(
         "type" => "label",
-        "default" => "Boring code stuff"
+        "default" => "Code Stuff"
     ),
     "footer" => array(
         "type" => "textarea",
-        "description" => "Site footer code",
+        "description" => "Site footer code <br> <small>(DONT mess with if you dont know html)</small>",
         "default" => file_get_contents(__DIR__ . '/../footer.html')
     )
 );

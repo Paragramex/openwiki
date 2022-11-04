@@ -9,7 +9,7 @@ function cleanFilename($stuff) {
 }
 if (!isset($argv[1])) exit("There is no module provided to run.\n");
 $module = cleanFilename($argv[1]);
-echo "wiki CLI (c) 2022 paragram. May be distributed under the terms of the GNU GPL.\n";
+echo "OpenWiki CLI (c) 2022 paragram. May be distributed under the terms of the GNU GPL.\n";
 echo "Module to run: $module\n";
 if (!file_exists(__DIR__ . "/$module.php")) die("Fatal: Module not found. Stopping.\n");
 echo "Running module $module...\n";
