@@ -114,7 +114,7 @@ else {
             <form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>" method="post">
                 <label>
                     <?php echo strip_tags(sysmsg('edit-box-label')); ?><div></div>
-                    <textarea style="box-sizing: border-box; width: 100%;" rows="10" name="contents"><?php if (isset($_POST['contents'])) echo htmlspecialchars($_POST['contents']); else echo htmlspecialchars(file_get_contents("pages/data/$id/page.md")); ?></textarea>
+                    <textarea style="box-sizing: border-box; width: 100%;" rows="10" name="contents"><?php if (!isset($_POST['contents'])) echo htmlspecialchars($_POST['contents']); else echo htmlspecialchars(file_get_contents("pages/data/$id/page.md")); ?></textarea>
                 </label>
                 <div></div>
                 <label>
