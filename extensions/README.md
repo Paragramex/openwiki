@@ -1,4 +1,6 @@
-This is a place where you can put your extensions.
+This is a place where you can put your extensions. 
+
+Extensions will be released by [paragram](https://github.com/Paragramex) on his github. He may release a guide to how to make them in the future.
 
 ## To install an extension:
 1. Download the extension from somewhere.
