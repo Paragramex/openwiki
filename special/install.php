@@ -78,7 +78,8 @@ if (isset($_POST['install'])) {
     foreach ($_POST as $name => $value) {
         if ($name === 'footer') {
             ?><li>Writing footer code... <?php
-            fwrite(fopen(__DIR__ . '/../footer.html', 'w+'), $_POST['footer']);
+            fwrite(fopen(__DIR__ . '/../footer.html', 'w+'), $_POST['footer'] . '<small>Created by <a href="https://replit.com/@paragram">paragram </a> © <span id="year"></span></small>
+<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>');
             ?>DONE</li><?php
             continue;
         }
