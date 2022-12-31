@@ -88,7 +88,7 @@ if (isset($_POST['install'])) {
         $settingsFileText .= '$' . $name . " = " . getExport($value) . ';';
         $settingsFileText .= "\n";
     }
-    $settingsFileText .= file_get_contents('/../optionsWarningBottom.php');
+    $settingsFileText .= file_get_contents(__DIR__ .'/../optionsWarningBottom.php');
     ?><li>Making administrator account... <?php 
     createAccount($_POST['username'], $_POST['password'], array('administrators'));
     ?>DONE</li>
