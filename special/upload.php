@@ -1,5 +1,4 @@
 <?php
-
  
 $title = 'Upload file';
 if (!isset($_SESSION['username'])) {

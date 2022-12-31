@@ -1,5 +1,5 @@
 <?php
-
+ 
 /** Parses a template.
  * @param $text: string
  */

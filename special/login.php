@@ -1,12 +1,10 @@
 <?php
 
-
 $title = 'Log in';
 if (isset($_POST['login'])) {
     switch (login($_POST['username'], $_POST['password'])) {
         case 0:
-            ?><p>You have been logged in. Please press the BACK button and start 
-                browsing the wiki!
+            ?><p>You have been logged in. Please <a href="index.php">go back to the wiki!</a>
             </p><?php
             return;
             break;

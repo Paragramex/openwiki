@@ -1,7 +1,7 @@
 <?php
-
+ 
 require_once __DIR__ . "/../accounts.php";
-$limit = 500; // Feel free to change
+$limit = 1000; // Feel free to change
 $recentEdits = json_decode(file_get_contents(__DIR__ . "/../mod/recentChanges.json"));
 // Prevent it from getting too large
 $recentEdits = array_slice($recentEdits, 0, $limit + 100);

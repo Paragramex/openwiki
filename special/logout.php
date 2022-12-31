@@ -1,6 +1,5 @@
 <?php
-
-
+ 
 $title = 'Logging out...';
 if (!isset($_POST['logout'])) {
     ?>

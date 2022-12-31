@@ -1,5 +1,5 @@
 <?php
-
+ 
  
 function api(string $action, array $args) {
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') {

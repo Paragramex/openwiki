@@ -1,5 +1,4 @@
 <?php
-
  
 require_once __DIR__ . "/../pageRender.php";
 $filename = cleanFilename($_GET['filename'] ?? 'example.txt');

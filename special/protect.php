@@ -1,5 +1,4 @@
 <?php
-
  
 global $originalPageName;
 $pagename = $_GET['pagename'] ?? die(sysmsg('no-page-name-to-protect'));

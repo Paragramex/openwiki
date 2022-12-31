@@ -1,5 +1,6 @@
 <?php
 
+
 if (php_sapi_name() !== "cli") {
     exit('Please run this from the CLI SAPI. Like, php ' . __FILE__);
 }

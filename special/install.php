@@ -1,6 +1,5 @@
 <?php
-
-
+ 
 function getExport($var) {
     ob_start();
     var_export($var);
@@ -30,7 +29,7 @@ $options = array(
     "sitename" => array(
         "type" => "text",
         "description" => "Site name:",
-        "default" => "OpenWiki Clone"
+        "default" => "My test wiki"
     ),
     "subheading" => array(
         "type" => "text",
@@ -61,11 +60,11 @@ $options = array(
     ),
     "code" => array(
         "type" => "label",
-        "default" => "Code Stuff"
+        "default" => "Boring code stuff"
     ),
     "footer" => array(
         "type" => "textarea",
-        "description" => "Site footer code <br> <small>(DONT mess with if you dont know html)</small>",
+        "description" => "Site footer code",
         "default" => file_get_contents(__DIR__ . '/../footer.html')
     )
 );
@@ -78,8 +77,7 @@ if (isset($_POST['install'])) {
     foreach ($_POST as $name => $value) {
         if ($name === 'footer') {
             ?><li>Writing footer code... <?php
-            fwrite(fopen(__DIR__ . '/../footer.html', 'w+'), $_POST['footer'] . '<small>Created by <a href="https://replit.com/@paragram">paragram </a> © <span id="year"></span></small>
-<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>');
+            fwrite(fopen(__DIR__ . '/../footer.html', 'w+'), $_POST['footer']);
             ?>DONE</li><?php
             continue;
         }
@@ -90,7 +88,7 @@ if (isset($_POST['install'])) {
         $settingsFileText .= '$' . $name . " = " . getExport($value) . ';';
         $settingsFileText .= "\n";
     }
-    $settingsFileText .= file_get_contents(__DIR__ . '/../optionsWarningBottom.php');
+    $settingsFileText .= file_get_contents('/../optionsWarningBottom.php');
     ?><li>Making administrator account... <?php 
     createAccount($_POST['username'], $_POST['password'], array('administrators'));
     ?>DONE</li>

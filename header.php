@@ -1,6 +1,5 @@
 <?php
-
-
+ 
 if (!defined('installed')) return;
 require_once 'settings.php';
 define('pagename', $originalPageName);

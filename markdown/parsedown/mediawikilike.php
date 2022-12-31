@@ -1,5 +1,4 @@
 <?php
-
  
 global $originalPageName;
 global $useTemplates;

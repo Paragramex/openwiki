@@ -1,5 +1,5 @@
 <?php
-
+ 
 ?>
 You entered an invalid special page name. A list of all valid 
 special pages is below:

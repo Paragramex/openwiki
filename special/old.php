@@ -1,6 +1,5 @@
 <?php
 
- 
 $pagetitle = $_GET['page'];
 $revid     = (int) $_GET['revision'];
 $title = "Version $revid of $pagetitle";

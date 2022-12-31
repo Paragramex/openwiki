@@ -1,8 +1,7 @@
 <?php
-
-
+ 
 if (basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
-    die('<h1>STOP HECKING, WE SEE YOU AND YOUR IP</h1>');
+    die('<h1>STALP HECKING</h1>');
 }
 function userinfo(int $id): ?object {
     if (!is_dir(__DIR__ . "/users/data/$id")) return null;

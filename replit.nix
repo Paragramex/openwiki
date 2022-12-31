@@ -1,5 +1,7 @@
 { pkgs }: {
 	deps = [
-		pkgs.php74
+		pkgs.nano
+  pkgs.sudo
+  pkgs.php74
 	];
 }

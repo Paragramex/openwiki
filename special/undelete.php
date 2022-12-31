@@ -1,6 +1,5 @@
 <?php
-
-
+ 
 $groups = getUserGroups($_SESSION['userid'], true);
 require_once __DIR__ . "/../settings.php";
 global $adminUserGroup;

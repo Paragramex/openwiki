@@ -1,5 +1,6 @@
 <?php
-
+ 
+ 
 $title = 'Search results';
 $query = $_GET['query'] ?? '';
 require_once __DIR__ . '/../accounts.php';

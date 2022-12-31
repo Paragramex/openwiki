@@ -1,6 +1,5 @@
 <?php
-
-
+ 
 $title = 'Create account';
 if (isset($_POST['signup'])) {
     if ($_POST['password'] === $_POST['password2']) {

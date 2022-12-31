@@ -1,4 +1,6 @@
 <?php
+
+
 add_system_messages(__DIR__ . "/messages.json");
 $hash = hash('sha224', uniqid("", true));
 require __DIR__ . "/ids.php";

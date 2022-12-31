@@ -1,6 +1,5 @@
 <?php
-
-
+ 
 if (!isset($_GET['page'])) {
     echo sysmsg('no-page-to-rollback');
     return;

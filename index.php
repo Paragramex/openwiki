@@ -111,11 +111,12 @@ else {
                 exit(0);
             }
             ?>
-            <form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>" method="post">
-                <label>
-                    <?php echo strip_tags(sysmsg('edit-box-label')); ?><div></div>
-                    <textarea style="box-sizing: border-box; width: 100%;" rows="10" name="contents"><?php if (!isset($_POST['contents'])) echo htmlspecialchars($_POST['contents']); else echo htmlspecialchars(file_get_contents("pages/data/$id/page.md")); ?></textarea>
-                </label>
+		<label for="editor"><?php echo strip_tags(sysmsg('edit-box-label')); ?></label>
+		<textarea id="editor"><?php if (isset($_POST['contents'])) echo htmlspecialchars($_POST['contents']); else echo htmlspecialchars(file_get_contents("pages/data/$id/page.md")); ?></textarea>
+		<script>addEventListener('DOMContentLoaded', function() { window.ed = new markdownEditor(document.querySelector('#editor')); });</script>             
+		<form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI']); ?>" method="post" onsubmit="document.querySelector('#fake-editor').value = document.querySelector('#editor').value;">
+                    <textarea id="fake-editor" style="display: none;box-sizing: border-box; width: 100%;" rows="10" name="contents"><?php if (isset($_POST['contents'])) echo htmlspecialchars($_POST['contents']); else echo htmlspecialchars(file_get_contents("pages/data/$id/page.md")); ?></textarea>
+		</label>
                 <div></div>
                 <label>
                     <?php echo strip_tags(sysmsg('edit-summary-label')); ?><div></div>
@@ -153,6 +154,7 @@ $output = ob_get_clean();
         echo json_encode($config, 128);
         ?>; window.config = config;</script>
         <script src="load.js"></script>
+		<script src="index.php?title=Special:rawfile&amp;filename=editor.js"></script>
         <script src="extraload.js"></script>
         <?php if ($redirectFrom !== false) { 
             ?><link rel="canonical" href="index.php?title=<?php echo htmlspecialchars(urlencode($originalPageName)); ?>" /><?php

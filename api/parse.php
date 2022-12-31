@@ -1,5 +1,5 @@
 <?php
-
+ 
 function api(string $action, array $arguments) {
     if (!isset($arguments['title']) && !isset($arguments['titles'])) {
         return add_error("wrongdata", "No title specified, use the title URL parameter next time", true);
