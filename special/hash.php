@@ -1,7 +1,5 @@
 <?php
-/*
-This file is part of paragrams OpenWiki system, find him here: github.com/Paragramex or on replit: replit.com/@paragram.
-*/
+
 
 $title = "Make a password hash";
 $algos = array('bcrypt', 'argon2i', 'md2', 'md5', 'sha1', 'sha256', 'sha384', 'sha512', 'ripemd128', 'ripemd160');

@@ -1,7 +1,4 @@
 <?php
-/*
-This file is part of paragrams OpenWiki system, find him here: github.com/Paragramex or on replit: replit.com/@paragram.
-*/
 
 header('Content-Type: application/json');
 if (!isset($_GET['token'])) exit('false');

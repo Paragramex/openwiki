@@ -1,7 +1,5 @@
 <?php
-/*
-This file is part of paragrams OpenWiki system, find him here: github.com/Paragramex or on replit: replit.com/@paragram.
-*/
+
  $title = "Graph equations"; ?>
 <div id="pad"></div><script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js" integrity="sha512-+tu0+vUXyZX+S51npa//IN6znNTLZsBoy8mXn9WzHxfBqYMy6gOzzfTK0VqZf9O171RY9AJviHDokCnvEq8+1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.0.1/math.js" integrity="sha512-qUD6aWQY0c9uVWnPVcbUzQg9Q06qfCpZhOK7jbWDKEAuX+i6gwS5P2VoDe+ZghmUepiB1FtBY5gNosseexrt9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

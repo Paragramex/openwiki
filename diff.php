@@ -1,7 +1,4 @@
 <?php
-/*
-This file is part of paragrams OpenWiki system, find him here: github.com/Paragramex or on replit: replit.com/@paragram.
-*/
 
 function diff(string $old, string $new, string $oldcaption = "Old revision", string $newcaption = "New revision") {
     if ($old === $new) { ?>Nothing was changed.<?php return;}
